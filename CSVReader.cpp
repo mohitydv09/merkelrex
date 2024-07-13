@@ -62,14 +62,14 @@ OrderBookEntry CSVReader::strings2OrderBookEntry(std::vector<std::string> tokens
     double price;
     double amount;
     if (tokens.size() != 5){
-        std::cout << "Bad Data: " << std::endl;
+        std::cout << "CSVReader::strings2OrderBookEntry, Bad Data: " << std::endl;
         throw std::exception{};
     }else{
         try{
             price = std::stod(tokens[3]);
             amount = std::stod(tokens[4]);
         } catch(const std::exception& e){
-            std::cout << "Bad Value: "<< std::endl;
+            std::cout << "CSVReader::strings2OrderBookEntry, Bad Value: "<< std::endl;
             throw;
         }
     }
@@ -79,5 +79,28 @@ OrderBookEntry CSVReader::strings2OrderBookEntry(std::vector<std::string> tokens
                     tokens[1],
                     OrderBookEntry::string2orderBookType(tokens[2])
     };
+    return obe;
+};
+
+OrderBookEntry CSVReader::strings2OrderBookEntry(std::string priceString,
+                                                std::string amountString,
+                                                std::string timestamp,
+                                                std::string product,
+                                                OrderBookType order_type){
+    double price;
+    double amount;
+    try{
+        price = std::stod(priceString);
+        amount = std::stod(amountString);
+    } catch(const std::exception& e){
+        std::cout << "CSVReader::strings2OrderBookEntry, Bad Value: "<< std::endl;
+        throw;
+    }
+    OrderBookEntry obe{price,
+                    amount,
+                    timestamp,
+                    product,
+                    order_type
+    }; 
     return obe;
 };

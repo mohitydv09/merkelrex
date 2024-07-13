@@ -43,4 +43,19 @@ double computePriceSpread(std::vector<OrderBookEntry>& entries){
 int main()  {
     MerkelMain app;
     app.init();
+    // Wallet wallet;
+    // wallet.insertCurrency("BTC", 5);
+    // std::cout << wallet.toString() << std::endl;
+
+    // wallet.insertCurrency("BTC", 10);
+    // std::cout << wallet.toString() << std::endl;
+
+    // wallet.removeCurrency("BTC", 25);
+    // std::cout << wallet.toString() << std::endl;
+
+    // wallet.removeCurrency("BTC", 8);
+    // std::cout << wallet.toString() << std::endl;
+
+    // std::cout << "Wallet Contains Currency: " << wallet.containsCurrency("BTC", 5) << std::endl;
+    // std::cout << "Wallet Contains Currency: " << wallet.containsCurrency("BTC", 8) << std::endl;
 }
