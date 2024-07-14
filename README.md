@@ -39,5 +39,5 @@ Follow the on-screen instructions to interact with the crypto-currency exchange 
 
 ## Certificate
 
-<object data="{{ post.course1certi.pdf }}" width="1000" height="1000" type='application/pdf'/>
+<object data="course1certi.pdf" width="1000" height="1000" type='application/pdf'/>
 
