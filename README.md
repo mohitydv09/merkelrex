@@ -39,5 +39,5 @@ Follow the on-screen instructions to interact with the crypto-currency exchange 
 
 ## Certificate
 
-<object data="course1certi.pdf" width="1000" height="1000" type='application/pdf'/>
+[![View Certificate](certi.jpg)](https://coursera.org/share/ee86f0356a45d2cbed6cd9f8d7751876)
 
